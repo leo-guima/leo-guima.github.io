@@ -1,5 +1,5 @@
 const buscaCnpj = () => {
-    cnpj = document.getElementById('cnpj').value
+    cnpj = document.getElementById('cnpj').value.replace(/\D/g, '');
     const settings = {
         "dataType": "jsonp",
         "url": "https://receitaws.com.br/v1/cnpj/" + cnpj,
